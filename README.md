@@ -11,5 +11,5 @@ This repository attempts to store the minimum amount of code that is required to
 Clone it, enter box folder and do `packer build xenial64.json`
 
 # Kitchen tests are included
-## Install kictchen 
+## Install kitchen 
 Run kitchen test after box is created in order to test if mysql-server is installed
