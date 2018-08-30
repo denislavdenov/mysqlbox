@@ -6,7 +6,7 @@ provisioner:
   name: shell
 
 platforms:
-  - name: vbox/redis64
+  - name: vbox/mysql64
     driver:
       box: mysql64
       provider: virtualbox
