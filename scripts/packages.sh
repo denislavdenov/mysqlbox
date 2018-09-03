@@ -19,12 +19,10 @@ apt-get upgrade -y ${APTARGS}
 apt-get dist-upgrade -y ${APTARGS}
 
 # mysql
-
 debconf-set-selections <<< 'mysql-server mysql-server/root_password password vagrant'
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password vagrant'
 apt-get update
 apt-get install -y mysql-server ${APTARGS}
-
 
 # Update to the latest kernel
 apt-get install -y linux-generic linux-image-generic ${APTARGS}
