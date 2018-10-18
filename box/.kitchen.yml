@@ -1,18 +1,18 @@
 ---
 driver:
-  name: vagrant
+ name: vagrant
 
 provisioner:
-  name: shell
+ name: shell
 
 platforms:
-  - name: vbox/mysql64
-    driver:
-      box: mysql64
-      provider: virtualbox
+ - name: ubuntu
+   driver:
+     box: denislavd/mysql64
+     provider: virtualbox
 
 verifier:
-  name: inspec
+ name: inspec
 
 suites:
-  - name: default
+ - name: default
