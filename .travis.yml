@@ -1,0 +1,19 @@
+language: python
+dist: xenial
+sudo: required
+cache:
+- apt
+addons:
+  apt:
+    packages:
+    - nginx
+    - curl
+    - wget
+    - ruby
+    - ruby-dev
+install:
+- sudo gem install inspec
+- sudo gem install bundler
+- bundle install
+script:
+- packer validate xenial64.json
