@@ -12,4 +12,4 @@ Clone it, enter box folder and do `packer build xenial64.json`
 
 # Kitchen tests are included
 ## Install kitchen 
-Run kitchen test after box is created in order to test if mysql-server is installed
+Run `kitchen test` after box is created in order to test if mysql-server is installed, mysql service is running, default mysql port is 3306 and if connection to the database works.
